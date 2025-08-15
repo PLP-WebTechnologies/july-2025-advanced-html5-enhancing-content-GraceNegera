@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An enhanced HTML5 form demo well-structured content,various i/p types, and proper use of semantic tags and validation attributes.">
+    <link rel="shortcut icon" href="image.jpg" type="image/jpg">
+</head>
+<body>
+    <header>
+        <h1>Enhanced HTML5 Form Example</h1>
+        <p>This page showcases well-structured content, media, and a complete HTML5 form with validation and semantic markup.</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Top Programming Languages and Frameworks</h2>
+            <p>Here's a look at some of the most popular programming languages and their corresponding frameworks.</p>
+            
+            <article>
+                <h3>Programming Languages (Unordered List)</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript & TypeScript</li>
+                    <li>Java</li>
+                    <li>C++ & C# </li>
+                    <li>Go (Golang) </li>
+                </ul>
+            </article>
+            
+            <article>
+                <h3>Top Frameworks (Ordered List)</h3>
+                <ol>
+                    <li>React</li>
+                    <li>Angular</li>
+                    <li>Django</li>
+                    <li>Flutter</li>
+                    <li>TensorFlow</li>
+                </ol>
+            </article>
+            
+            <hr>
+            
+            <article>
+                <h3>Languages and Their Attributes (Table)</h3>
+                <table>
+                    <caption>Comparison of Popular Programming Languages</caption>
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Creator</th>
+                            <th>Year</th>
+                            <th>Simplicity (%)</th>
+                            <th>Usability (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python</td>
+                            <td>Guido van Rossum</td>
+                            <td>1991</td>
+                            <td>95</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Brendan Eich</td>
+                            <td>1995</td>
+                            <td>80</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>James Gosling</td>
+                            <td>1995</td>
+                            <td>70</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>Microsoft</td>
+                            <td>2000</td>
+                            <td>75</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Bjarne Stroustrup</td>
+                            <td>1979</td>
+                            <td>50</td>
+                            <td>70</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Multimedia Content</h2>
+            <p>Explore some media to better understand the topic of web development and HTML.</p>
+            <figure>
+                <img src="image.jpg" height="300px" alt="A conceptual image representing web development" title="Web Development Concepts">
+                <figcaption>A placeholder image illustrating the concept of web development.</figcaption>
+            </figure>
+            
+            <audio controls preload="metadata">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>An embedded video from YouTube.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mDlIjKu1Uao" title="YouTube video player about HTML5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>Contact Us: Enhanced HTML5 Form</h2>
+            <p>Please fill out this form with your information.</p>
+            <form>
+                <fieldset>
+                    <legend>Personal and Contact Information</legend>
+                    
+                    <div>
+                        <label for="full_name">Full Name: *</label>
+                        <input type="text" id="full_name" name="full_name" placeholder="John Doe" autocomplete="name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email: *</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" autocomplete="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" autocomplete="tel" required>
+                    </div>
+                    
+                    <div>
+                        <label for="dob">Date of Birth: </label>
+                        <input type="date" id="Dob" name="dob" required>
+                    </div>
+                    
+                    <div>
+                        <label for="user_age">Age:</label>
+                        <input type="number" id="user_age" name="user_age" min="18" max="99">
+                        <small>Must be between 18 and 99.</small>
+                    </div>
+                    
+                    <div>
+                        <label for="website">Website:</label>
+                        <input type="url" id="website" name="website" placeholder="https://www.example.com">
+                    </div>
+
+                    <div>
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                        <small>Minimum 8 characters.</small>
+                    </div>
+
+                    <div>
+                        <label for="account_stat">Account Status: </label>
+                        <input type="text" id="account_stat" name="account_stat" value="Active" readonly>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Preferences and Comments</legend>
+                    
+                    <div>
+                        <p>Preferred Contact Method: *</p>
+                        <input type="radio" id="contact_email" name="contact_method" value="email" required>
+                        <label for="contact_email">Email</label>
+                        
+                        <input type="radio" id="contact_phone" name="contact_method" value="phone">
+                        <label for="contact_phone">Phone</label>
+                    </div>
+                    
+                    <div>
+                        <label for="continent">Your Continent:</label>
+                        <select id="continent" name="continent" required>
+                            <option value="" disabled selected>Select your continent...</option>
+                            <option value="af">Africa</option>
+                            <option value="na">North America</option>
+                            <option value="sa">South America</option>
+                            <option value="asia">Asia</option>
+                            <option value="ant">Antarctica</option>
+                            <option value="eu">Europe</option>
+                            <option value="au">Australia</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="5" placeholder="Enter any additional comments here."></textarea>
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Submit Form</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p> &copy; 2025 Enhanced HTML Form Submission. All rights reserved.</p>
+    </footer>
+</body>
+</html>
